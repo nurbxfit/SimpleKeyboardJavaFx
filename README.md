@@ -1,5 +1,8 @@
 # SimpleKeyboardJavaFx
-Process of learning JavaFx for my Assigment
+
+Process of learning JavaFx for my Assignment.
+
+SImpleKeyboard2.jar is the sample of my working program for my Assignment ( not yet finish and codee will be updat soon).
 
 #author: Nurfitri
 

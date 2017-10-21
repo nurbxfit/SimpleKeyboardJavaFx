@@ -13,31 +13,41 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 
 
-public class KeyLayout {
+//these file will create simple keyboard layout using javafx
+//uncomment KeyLayout in Main and comment the getStyle form xml file.
+//note that i don't really know what i am doing here i am still learning.
+// maybe i should use keyEvent KeyCode ? but i stil don't understand how to do it.
 
+public class KeyLayout {
+	//refer UI sketch in readme.
 	private Pane root;
 	private TextArea textarea;
 	private GridPane grid;
 	private String text = "";
 
+	//default constructor.
 	public KeyLayout(){
 		this.root = new Pane();
 		root.setPadding(new Insets(10));
 		root.prefHeight(440.0);
 		root.prefWidth(516.0);
-		//root.getStyleClass().add("virtual-keyboard");
+		
+		//set children for root. serKeyGrid contain the keyboard button.
 		root.getChildren().addAll(setTextArea(),setKeyGrid(),controlPane());
 
 
 
 	}
 
+	//this code intent to create a menubar , i should use menu instead of Vbox.
 	private Node controlPane() {
+		//still need to configure the position you can comment this methode.
 		VBox vbox = new VBox();
 		vbox.getChildren().add(createButton("Save"));
 		return vbox;
 	}
 
+	//set the textArea to display the output.
 	private Node setTextArea() {
 		//TextArea
 		textarea = new TextArea();
@@ -49,6 +59,7 @@ public class KeyLayout {
 		return textarea;
 	}
 
+	//set the keyboard layout.
 	private Node setKeyGrid() {
 		//GridPane
 		grid = new GridPane();
@@ -63,7 +74,7 @@ public class KeyLayout {
 		return grid;
 	}
 
-
+	//create a keyboard button
 	private Node keyboardLayout() {
 
 		// squareframe holding the key
@@ -131,6 +142,7 @@ public class KeyLayout {
 
 
 
+	//create Button and provide handler when user click on it
 	private Node createButton(String string) {
 		Button button = new Button();
 		button.setText(string);
@@ -139,15 +151,23 @@ public class KeyLayout {
 
 
 			@Override
+			//handle create to handle event when user click on the button, there is also other way to do it.
 			public void handle(ActionEvent e) {
 				// TODO Auto-generated method stub
 
-
-				if(textarea.getText().toString() == "")
+				
+				String toCheck = new String();
+				toCheck = textarea.getText().toString();
+				//my intent is to initialise the textarea incase user delete the text using real keyboard or curso. 
+				if(toCheck == "")
 				{
-					textarea.setText("");
+					text = "";
+					textarea.setText(text);
+					
 				}
+				//just a simple controler you can add more for tab and maybe capsLock
 				String str = ((Button) e.getSource()).getText().toString();
+				//if user hit the space button, this will check the button presed and then create a space in the text.
 				if(str == "Space")
 				{
 					str = " ";

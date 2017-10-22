@@ -38,3 +38,6 @@ then i added other keyboard code for tab and backspace.
 
 # next update :
   - add a spell checking feutures based on local list of word.
+
+# check out SImpleKeyboard3.jar
+ - here are the jar file you can run ...

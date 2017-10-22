@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="440.0" prefWidth="516.0" style="-fx-background-color: #708090;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <Pane prefHeight="386.0" prefWidth="516.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="textarea" layoutX="7.0" layoutY="-4.0" onDragDetected="#handle" prefHeight="159.0" prefWidth="503.0" />
+            <Separator layoutY="162.0" prefHeight="3.0" prefWidth="516.0" />
+            <GridPane gridLinesVisible="true" layoutX="6.0" layoutY="172.0" prefHeight="207.0" prefWidth="504.0" style="-fx-background-color: #D3D3D3;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <VBox prefHeight="189.0" prefWidth="504.0">
+                     <children>
+                        <HBox alignment="TOP_CENTER" prefHeight="42.0" spacing="2.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handle" text="`" />
+                              <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="1" />
+                              <Button layoutX="72.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="2" />
+                              <Button layoutX="134.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="3" />
+                              <Button layoutX="258.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="4" />
+                              <Button layoutX="320.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="5" />
+                              <Button layoutX="382.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="6" />
+                              <Button layoutX="444.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="7" />
+                              <Button layoutX="458.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="8" />
+                              <Button mnemonicParsing="false" onAction="#handle" text="9" />
+                              <Button layoutX="251.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="0" />
+                              <Button layoutX="313.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="-" />
+                              <Button layoutX="375.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="+" />
+                              <Button layoutX="369.0" layoutY="20.0" mnemonicParsing="false" onAction="#handle" text="=" />
+                              <Button layoutX="437.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="backspace" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" layoutX="15.0" layoutY="15.0" prefHeight="42.0" spacing="2.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#handle" prefHeight="26.0" prefWidth="63.0" text="tab" />
+                              <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="Q" />
+                              <Button layoutX="72.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="W" />
+                              <Button layoutX="134.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="E" />
+                              <Button layoutX="258.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="R" />
+                              <Button layoutX="320.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="T" />
+                              <Button layoutX="382.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="Y" />
+                              <Button layoutX="444.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="U" />
+                              <Button layoutX="458.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="I" />
+                              <Button mnemonicParsing="false" onAction="#handle" text="O" />
+                              <Button layoutX="251.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="P" />
+                              <Button layoutX="313.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="[" />
+                              <Button layoutX="375.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="]" />
+                              <Button layoutX="437.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" prefHeight="26.0" prefWidth="38.0" text="\\" />
+                           </children>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="104.0" prefHeight="42.0" spacing="2.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="70.0" text="Spell Check" />
+                              <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="A" />
+                              <Button layoutX="72.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="S" />
+                              <Button layoutX="134.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="D" />
+                              <Button layoutX="258.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="F" />
+                              <Button layoutX="320.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="G" />
+                              <Button layoutX="382.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="H" />
+                              <Button layoutX="444.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="J" />
+                              <Button layoutX="458.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="K" />
+                              <Button mnemonicParsing="false" onAction="#handle" text="L" />
+                              <Button layoutX="251.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text=";" />
+                              <Button layoutX="313.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="'" />
+                              <Button layoutX="375.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="Enter" />
+                           </children>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="TOP_CENTER" prefHeight="42.0" spacing="2.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#saveFile" text="save" />
+                              <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="Z" />
+                              <Button layoutX="72.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="X" />
+                              <Button layoutX="134.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="C" />
+                              <Button layoutX="258.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="V" />
+                              <Button layoutX="320.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="B" />
+                              <Button layoutX="382.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="N" />
+                              <Button layoutX="444.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="M" />
+                              <Button layoutX="458.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="," />
+                              <Button mnemonicParsing="false" onAction="#handle" text="." />
+                              <Button layoutX="251.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="/" />
+                              <Button layoutX="313.0" layoutY="10.0" mnemonicParsing="false" onAction="#handle" text="clear" />
+                           </children>
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handle" prefHeight="26.0" prefWidth="325.0" text="space bar" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </Pane>
+   </center>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+</BorderPane>

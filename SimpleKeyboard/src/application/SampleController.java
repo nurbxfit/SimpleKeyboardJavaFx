@@ -73,8 +73,8 @@ public class SampleController {
 	//unfinish methode for saving into file
 	public void saveFile() throws IOException {
 		//crate file chooser popup
-		FileChooser chooseFile = new FileChooser();
-		File file = chooseFile.showSaveDialog(stage);
+		
+		File file = new File("testoutput.txt");
 		String toSave = new String();
 		toSave = textarea.getText().toString();
 		System.out.println(toSave);

@@ -55,7 +55,7 @@ then i added other keyboard code for tab and backspace.
 
 
 # Note : Basic File IO code:
-
+/*
  Save File: throw IOException
 	{
 	String stringToSave = new String();
@@ -75,3 +75,4 @@ then i added other keyboard code for tab and backspace.
 		WordReaded = buffer.readLine(); // make it a loop is we are reading for multiple line word.
 		buffer.close();
 	}
+*/

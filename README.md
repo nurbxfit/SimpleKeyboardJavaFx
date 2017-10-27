@@ -56,8 +56,7 @@ then i added other keyboard code for tab and backspace.
 
 # Note : Basic File IO code:
 
-
-/* Save File: throw IOException
+ Save File: throw IOException
 	{
 	String stringToSave = new String();
 	File filepath = new File("C:\\Something.txt") // change the string to your filepath.

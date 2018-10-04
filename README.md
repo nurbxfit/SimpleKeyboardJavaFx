@@ -7,7 +7,7 @@ Process of learning JavaFx for my Assigment
 # author: Nurfitri
 
 
-(nurbx) Note: KeyLayout.java is a alternative ways of setting up the UI, I am too lazy and not that smart to finish it. so instead i used scenebuilder.
+Note: KeyLayout.java is a alternative ways of setting up the UI, I am too lazy and not that smart to finish it. so instead i used scenebuilder.
 
 # Apps UI hirechy Sketch:
 
